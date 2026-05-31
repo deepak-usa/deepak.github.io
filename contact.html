@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Deepak IT & Web Services</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --success: #27ae60;
+            --bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .contact-card {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .info-sidebar {
+            background: var(--primary);
+            color: white;
+            padding: 40px;
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .form-area {
+            padding: 40px;
+            flex: 1.5;
+            min-width: 300px;
+        }
+
+        h1, h2 { margin-top: 0; }
+        
+        .contact-item {
+            margin-bottom: 25px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+
+        .details p { margin: 0; font-size: 0.95rem; line-height: 1.5; }
+        .details a { color: #5dade2; text-decoration: none; }
+
+        .pan-box {
+            margin-top: 30px;
+            padding: 10px;
+            border: 1px dashed rgba(255,255,255,0.3);
+            border-radius: 5px;
+            font-size: 0.85rem;
+            background: rgba(255,255,255,0.05);
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            background: var(--success);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .btn-whatsapp:hover { background: #219150; }
+
+        .map-link {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.85rem;
+            color: #5dade2;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .contact-card { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="contact-card">
+    <div class="info-sidebar">
+        <h2>Contact Info</h2>
+        <p>Deepak IT & Web Services</p>
+
+        <div class="contact-item">
+            <span class="icon">📍</span>
+            <div class="details">
+                <p>188, 2nd Cross, Gowramma,<br>
+                Bhanu Nursing Home Road, Bommanahalli,<br>
+                Bengaluru - 560068, Karnataka, India.</p>
+                <a href="https://www.google.com/maps/search/188,+2nd+Cross,+Gowramma,+Bommanahalli+Bengaluru" target="_blank" class="map-link">View on Google Maps</a>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <span class="icon">📞</span>
+            <div class="details">
+                <p><a href="tel:+918867740113">+91-8867740113</a></p>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <span class="icon">📧</span>
+            <div class="details">
+                <p><a href="mailto:diws2026@outlook.com">diws2026@outlook.com</a></p>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <span class="icon">🌐</span>
+            <div class="details">
+                <p><a href="https://deepakworld.web.app" target="_blank">www.deepakworld.web.app</a></p>
+            </div>
+        </div>
+
+        <div class="pan-box">
+            <strong>Business Transparency:</strong><br>
+            GSTIN No : 29BISPD3613D1ZD
+        </div>
+    </div>
+
+    <div class="form-area">
+        <h2>Get in Touch</h2>
+        <p>Have a project or want to join our internship? Let's discuss your requirements.</p>
+        
+        <a href="https://wa.me/918867740113?text=Hi%20Deepak,%20I'm%20contacting%20you%20regarding%20IT%20Services/Internship." class="btn-whatsapp">
+            Message on WhatsApp
+        </a>
+
+        <div style="margin-top: 40px; color: #7f8c8d; font-size: 0.9rem;">
+            <strong>Office Hours:</strong><br>
+            Monday - Saturday: 10:00 AM - 6:00 PM<br>
+            Sunday: Closed
+        </div>
+    </div>
+</div>
+
+<footer style="background: #2c3e50; color: white; padding: 30px 20px; text-align: center; font-size: 0.85rem; border-top: 4px solid #5f259f; font-family: 'Verdana', sans-serif;">
+    <div style="max-width: 1000px; margin: 0 auto; line-height: 1.8;">
+        <p style="font-weight: bold; font-size: 1rem; color: orange; margin-bottom: 5px;">Deepak IT & WebServices | Proprietorship Firm</p>
+        <p>MSME Registration: <strong>UDYAM-KR-03-0674838</strong> | NIC Code: 62011 (Software Development)</p>
+        
+        <!-- Policy Links Section -->
+        <div style="margin: 15px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+            <a href="privacy-policy.html" class="menu-item" target="_blank">Privacy Policy</a>
+<a href="refund-policy.html" class="menu-item" target="_blank">Refund Policy</a>
+<a href="shipping-return.html" class="menu-item" target="_blank">Shipping and Return Policy</a>
+
+         <a href="terms.html" class="menu-item" target="_blank">Terms & Conditions</a>
+        </div>
+
+        <p style="color: #bdc3c7; font-size: 0.75rem; margin-top: 10px;">
+            &copy; 2026 All Rights Reserved. | Support: diws2026@outlook.com
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

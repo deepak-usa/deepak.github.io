@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate For Children Games Development</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Verdana', sans-serif; background: linear-gradient(135deg, #000000, #434343); background-attachment: fixed; color: white; min-height: 100vh; display: flex; flex-direction: column; align-items: center; border: 15px solid brown; }
+        #stars { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url('star-background.gif') repeat; background-size: cover; z-index: -1; opacity: 0.5; }
+        .main-wrapper { width: 95%; max-width: 800px; margin: 20px auto; background-color: rgba(165, 42, 42, 0.9); border: 5px solid #04AA6D; border-radius: 15px; padding: 30px; text-align: center; box-shadow: 0 0 20px rgba(0,0,0,0.5); }
+        .name { color: orange; font-size: 2.2em; font-weight: bold; margin-bottom: 20px; text-shadow: 2px 2px 4px #000; }
+        .game-links a { display: block; margin: 10px auto; color: #00d4ff; text-decoration: none; font-size: 18px; transition: 0.3s; }
+        
+        .btn-payment { display: inline-block; padding: 12px 24px; color: #fff; text-decoration: none; border-radius: 8px; font-weight: bold; margin: 8px; transition: transform 0.2s; cursor: pointer; border: none; font-size: 14px; text-align: center; min-width: 180px; vertical-align: middle; }
+        .btn-payment:hover { transform: scale(1.05); }
+        
+        /* Razorpay form alignment */
+        .rzp-form-container { margin: 15px 0; display: inline-block; vertical-align: middle; }
+        
+        .paypal { background: #003087; }
+        .gpay { background: #4285F4; }
+        .payu { background: #61ba26; color: white; } /* PayU Green */
+        .wise { background: #9fe870; color: #2e3333; }
+
+        .qr-section { margin-top: 30px; padding-top: 20px; border-top: 2px dashed rgba(255,255,255,0.3); }
+        .qr-section img { background: white; padding: 10px; border-radius: 10px; margin-top: 15px; max-width: 100%; height: auto; }
+        
+        /* Footer link styles */
+        .menu-item { color: #ecf0f1; text-decoration: none; margin: 0 10px; }
+        .menu-item:hover { color: orange; }
+
+        @media (max-width: 600px) { .name { font-size: 1.5em; } .btn-payment, .rzp-form-container { display: block; width: 100%; margin: 10px 0; } }
+    </style>
+</head>
+<body>
+
+<div id="stars"></div>
+
+<div class="main-wrapper">
+    <p class="name">Donate For Children Games Development</p>
+
+    <div class="game-links">
+        <a href="https://deepakworld.web.app" target="_blank">Home Page!</a>
+        <a href="https://deepakworld.github.io/Deepak.apk" download style="font-weight:bold; color: #04AA6D;">📥 Download App</a>
+        <a href="https://deepakrummy.github.io/games/index.html" target="_blank">Wow Games</a>
+        <a href="https://gamefans.web.app" target="_blank">Play Unlimited Free Games!</a>
+        <a href="https://perchance.org/deepak-home" target="_blank">AI Site!</a>
+    </div>
+
+    <hr style="margin: 20px 0; border: 0; border-top: 1px solid rgba(255,255,255,0.2);">
+
+    <div class="payment-buttons">
+        
+           <div class="pay-option">
+                    <span class="pay-label">Game Dev Support Fee (India)</span>
+                    <form>
+                        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Sdgy0Sufa6OlhH" async> </script>
+                    </form>
+                </div>
+        <hr>
+<div style="margin: 15px 0; text-align: center;"> 
+    <a style="
+        width: 180px; 
+        background-color: #1065b7; 
+        text-align: center; 
+        font-weight: 800; 
+        padding: 12px 10px; 
+        color: white; 
+        font-size: 14px; 
+        display: inline-block; 
+        text-decoration: none; 
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        font-family: 'Verdana', sans-serif;
+        transition: 0.3s;
+    " href="https://u.payu.in/Wrj2JHmq3aCL"> 
+        Donate Via PayU.in 
+    </a> 
+</div>      
+ <hr>
+
+
+<div class="pay-option" style="max-width: 350px; margin: 20px auto; text-align: center;">
+   
+    <button onclick="payWithPhonePe()" style="background: #5f259f; color: white; border: none; padding: 14px; border-radius: 8px; font-weight: bold; cursor: pointer; width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 16px; transition: 0.3s;">
+        <img src="https://www.phonepe.com/webstatic/8141/static/m-608b49.svg" alt="PhonePe" style="height: 24px;"> 
+        Donate via PhonePe
+    </button>
+    
+</div>
+
+
+
+
+        <hr>
+        <a href="https://wise.com/pay/business/deepakt604?utm_source=open_link" target="_blank" class="btn-payment wise" style="padding: 8px 16px; font-size: 14px; min-width: 150px;">
+           💼 Wise Donation
+        </a>
+        <hr>
+        <a href="https://www.paypal.com/ncp/payment/8F76ZTRBSJC3W" target="_blank" class="btn-payment paypal">Paypal Donation</a>
+
+    </div>
+
+    <div class="qr-section">
+        <h2>Pay with UPI Scan:</h2>
+        <p style="color: #ffd700;">UPI ID: pos.5361206@indus</p>
+        <img src="pay.png" alt="UPI SCAN" width="250">
+    </div>
+</div>
+<script src="https://mercury.phonepe.com/web/bundle/checkout.js"></script>
+<script>
+async function payWithPhonePe() {
+    // Generate a random ID automatically for the donation session
+    const donationID = "DONATE_" + Date.now() + "_" + Math.floor(Math.random() * 1000);
+    
+    // Set your donation amount here (100000 = ₹1000 typically, depending on your backend logic)
+    const donationAmount = 1000; 
+
+    try {
+        const response = await fetch('https://phonepe-kohl.vercel.app/api/initiate-phonepe-payment', { 
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ 
+                orderId: donationID,
+                amount: donationAmount
+            })
+        });
+
+        const data = await response.json();
+        const paymentUrl = data.redirectUrl;
+
+        if (paymentUrl) {
+            if (window.PhonePeCheckout && typeof window.PhonePeCheckout.transact === 'function') {
+                window.PhonePeCheckout.transact({
+                    tokenUrl: paymentUrl,
+                    callback: function(res) {
+                        if (res === 'CONCLUDED') {
+                            // Instant download after success
+                            window.location.href = "https://deepakworld.github.io/digital/chess.pdf";
+                        } else if (res === 'USER_CANCEL') {
+                            alert("Payment was cancelled.");
+                        } else {
+                            alert("Payment status: " + res);
+                        }
+                    }
+                });
+            } else {
+                // Full page redirect if SDK is not ready
+                window.location.href = paymentUrl;
+            }
+        } else {
+            alert("Error: " + (data.message || "Could not initiate payment."));
+        }
+    } catch (error) {
+        console.error("Network Error:", error);
+        alert("Unable to connect to the payment server.");
+    }
+}
+</script>
+
+<footer style="background: #2c3e50; color: white; padding: 30px 20px; text-align: center; font-size: 0.85rem; border-top: 4px solid #5f259f; font-family: 'Verdana', sans-serif; width: 100%;">
+    <div style="max-width: 1000px; margin: 0 auto; line-height: 1.8;">
+        <p style="font-weight: bold; font-size: 1rem; color: orange; margin-bottom: 5px;">Deepak IT & WebServices | Proprietorship Firm</p>
+        <p>MSME Registration: <strong>UDYAM-KR-03-0674838</strong> | NIC Code: 62011 (Software Development)</p>
+        
+        <div style="margin: 15px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+            <a href="privacy-policy.html" class="menu-item" target="_blank">Privacy Policy</a>
+            <a href="refund-policy.html" class="menu-item" target="_blank">Refund Policy</a>
+            <a href="shipping-return.html" class="menu-item" target="_blank">Shipping and Return Policy</a>
+            <a href="terms.html" class="menu-item" target="_blank">Terms & Conditions</a>
+        </div>
+
+        <p style="color: #bdc3c7; font-size: 0.75rem; margin-top: 10px;">
+            &copy; 2026 All Rights Reserved. | Support: diws2026@outlook.com
+        </p>
+    </div>
+</footer>
+</body>
+</html>

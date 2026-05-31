@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Quotation - Deepak IT & Web Services</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --bg-light: #f4f7f6;
+            --text-dark: #333;
+            --accent-orange: #e67e22;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        header {
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-area h1 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 24px;
+        }
+
+        .logo-area p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        h2 {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 10px 15px;
+            font-size: 18px;
+            border-radius: 4px;
+            margin-top: 40px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            padding: 12px;
+            text-align: left;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        .price-col {
+            font-weight: bold;
+            color: #27ae60;
+            white-space: nowrap;
+        }
+
+        .intl-fee {
+            color: var(--accent-orange);
+            font-weight: bold;
+        }
+
+        .terms {
+            background: #fff8e1;
+            padding: 20px;
+            border-left: 5px solid #ffc107;
+            margin-top: 30px;
+        }
+
+        .terms ul {
+            padding-left: 20px;
+        }
+
+        .no-print-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background: var(--secondary-color);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+        }
+
+        @media print {
+            .no-print-btn { display: none; }
+            body { padding: 0; background: white; }
+            .container { box-shadow: none; border: none; width: 100%; }
+        }
+
+        @media (max-width: 600px) {
+            header { flex-direction: column; text-align: center; }
+            table { display: block; overflow-x: auto; }
+        }
+    </style>
+
+    <style>
+        @media (max-width: 600px) {
+            header { flex-direction: column; text-align: center; }
+            table { display: block; overflow-x: auto; }
+        }
+
+        /* PASTE THE UPDATED CODE HERE */
+        @media print {
+            .no-print-btn, .menu { display: none !important; } 
+            body { padding: 0; background: white; }
+            .container { 
+                box-shadow: none; 
+                border: none; 
+                width: 100%; 
+                max-width: 100%; 
+                padding: 0; 
+                margin: 0;
+            }
+        }
+    </style>
+    <style>
+.menu {
+    background: var(--primary-color);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu-item {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.menu-item:hover {
+    background: var(--secondary-color);
+}
+         </style>
+</head>
+<body>
+ <div class="menu">
+     <a href="https://deepakworld.web.app" class="menu-item" target="_blank">Home</a>
+         <a href="about.html" class="menu-item" target="_blank">About Us</a>
+
+<a href="privacy-policy.html" class="menu-item" target="_blank">Privacy Policy</a>
+<a href="refund-policy.html" class="menu-item" target="_blank">Refund Policy</a>
+<a href="shipping-return.html" class="menu-item" target="_blank">Shipping & Return Policy</a>
+
+
+         <a href="invoice.html" class="menu-item" target="_blank">Buy & Download Invoice</a>
+         <a href="terms.html" class="menu-item" target="_blank">Terms & Conditions</a>
+           <a href="store.html" class="menu-item" target="_blank">Digital Store</a>
+
+     <a href="flow.html" class="menu-item" target="_blank">Project & Payment Flow</a> 
+         <a href="https://deepakworld.github.io/rate.pdf" class="menu-item" target="_blank">2026 Technical Proposal & Rate Card</a>
+         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdIgWlJFUiP6D6CfR-_VPCgnZ8mmfS3_4gxo7MCy2F3xoX6xA/viewform" class="menu-item" target="_blank">Students Registration Form</a>
+             <a href="certificate.html" class="menu-item" target="_blank">Certificate</a>
+          <a href="courses.html" class="menu-item" target="_blank">Courses</a>
+          <a href="fees.html" class="menu-item" target="_blank">Fees</a>
+          <a href="verify.html" class="menu-item" target="_blank">HR-Verify</a>
+         <a href="law.html" class="menu-item" target="_blank">Legal</a>
+          <a href="contact.html" class="menu-item" target="_blank">Contact</a>
+         <a href="code.html" class="menu-item">Developing Project</a>
+     
+     
+          <a href="pay.html" class="menu-item">Donate</a>
+
+         
+
+
+        </div>
+<div class="container">
+    <button class="no-print-btn" onclick="window.print()">Download as PDF / Print</button>
+
+    <header>
+        <div class="logo-area">
+            <h1>Deepak IT & Web Services</h1>
+            <p>deepakworld.github.io</p>
+            <p>Professional IT Solutions & Software Development</p>
+        </div>
+        <div style="text-align: right; font-size: 14px;">
+            <p><strong>Quotation/Rate Card</strong></p>
+            <p>Year: 2026</p>
+            <p>Status: <span style="color: var(--secondary-color);">Registered Entity</span></p>
+            <p><strong>GSTIN: 29BISPD3613D1ZD</strong></p>
+        </div>
+    </header>
+
+    <h2>1. Development Services (Project Based)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Service</th>
+                <th>Entry-Level (MVP)</th>
+                <th>Professional/Standard</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Web App Development</td>
+                <td class="price-col">₹40,000 – ₹1.5L</td>
+                <td class="price-col">₹2L – ₹8L</td>
+            </tr>
+            <tr>
+                <td>Mobile App (Android/iOS)</td>
+                <td class="price-col">₹50,000 – ₹2L</td>
+                <td class="price-col">₹3L – ₹12L</td>
+            </tr>
+            <tr>
+                <td>Custom Software / SaaS</td>
+                <td class="price-col">₹1.5L – ₹3L</td>
+                <td class="price-col">₹5L – ₹25L</td>
+            </tr>
+            <tr>
+                <td>Game Development (2D/3D)</td>
+                <td class="price-col">₹80,000 – ₹2.5L</td>
+                <td class="price-col">₹4L – ₹15L</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>2. International Payment & Conversion Charges</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Charge Category</th>
+                <th>Rate / Fee</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Currency Conversion</strong></td>
+                <td class="intl-fee">+ 2% to 3.5%</td>
+                <td>Applied on the total invoice amount for USD/EUR/GBP to INR conversion.</td>
+            </tr>
+            <tr>
+                <td><strong>Skydo Service Fee</strong></td>
+                <td class="intl-fee">Flat ₹2,000 - ₹3,000*</td>
+                <td>International inward remittance & processing charges (Per Transaction).</td>
+            </tr>
+            <tr>
+                <td><strong>Intermediary Bank Fee</strong></td>
+                <td class="intl-fee">As per Actuals</td>
+                <td>If applicable by the remitting or intermediary bank.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>3. IT Support & Infrastructure</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Service</th>
+                <th>One-Time / Per Call</th>
+                <th>Monthly Retainer (AMC)</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Server Support (Win/Linux)</td>
+            <td class="price-col">₹2,500 – ₹5,000</td>
+            <td class="price-col">₹25,000 – ₹50,000</td>
+        </tr>
+        <tr>
+            <td>AD / VPN / Firewall Setup</td>
+            <td class="price-col">₹15,000 – ₹35,000*</td>
+            <td class="price-col">Included in AMC</td>
+        </tr>
+        <tr>
+            <td>Firewall AMC (Standalone)</td>
+            <td class="price-col">₹1,000 – ₹2,500</td>
+            <td class="price-col">₹5,000 – ₹30,000</td>
+        </tr>
+        <tr>
+            <td>Server AMC (AD/Domain)</td>
+            <td class="price-col">₹4,000 – ₹5,000</td>
+            <td class="price-col">₹15,000 – ₹30,000</td>
+        </tr>
+        <tr>
+            <td>VPN Support/Management</td>
+            <td class="price-col">₹1,000 – ₹1,500</td>
+            <td class="price-col">₹10,000 – ₹25,000</td>
+        </tr>
+        <tr>
+            <td>Full Network Infrastructure</td>
+            <td class="price-col">₹5,000 – ₹15,000</td>
+            <td class="price-col">₹20,000 – ₹1,20,000</td>
+        </tr>
+            <tr>
+                <td>OS Troubleshooting & Repair</td>
+                <td class="price-col">₹500 – ₹1,500</td>
+                <td class="price-col">₹2,500/month (per PC)</td>
+            </tr>
+        </tbody>
+    </table>
+
+      <h2>4. Creative Design Services (Design Only)</h2>
+    <p class="sub-text">*Focusing strictly on labor, creative layout, and technical typing.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Design Item</th>
+                <th>Beginner/Freelance Tier</th>
+                <th>Professional/Agency Tier</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Student ID Card (Master Template)</strong></td>
+                <td class="price-col">₹1,000 /layout</td>
+                <td class="price-col">₹3,500 /layout</td>
+            </tr>
+            <tr>
+                <td><strong>Individual ID Card Processing*</strong></td>
+                <td class="price-col">₹5 – ₹10 /student</td>
+                <td class="price-col">₹15 – ₹25 /student</td>
+            </tr>
+            <tr>
+                <td>Student Report Cards (Multi-page)</td>
+                <td class="price-col">₹300 /page</td>
+                <td class="price-col">₹1,200 /page</td>
+            </tr>
+            <tr>
+                <td>Brochures (Bi/Tri-fold)</td>
+                <td class="price-col">₹2,500 /design</td>
+                <td class="price-col">₹8,000 /design</td>
+            </tr>
+            <tr>
+                <td>Letterhead & Envelope Design</td>
+                <td class="price-col">₹800 /set</td>
+                <td class="price-col">₹3,000 /set</td>
+            </tr>
+            <tr>
+                <td>English Typing (300 words)</td>
+                <td class="price-col">₹30 /page</td>
+                <td class="price-col">₹50 /page</td>
+            </tr>
+            <tr>
+                <td>Kannada / Bilingual Typing</td>
+                <td class="price-col">₹50 /page</td>
+                <td class="price-col">₹100 /page</td>
+            </tr>
+            <tr>
+                <td>Exam Question Papers</td>
+                <td class="price-col">₹100 /page</td>
+                <td class="price-col">₹300 /page</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>5. ID Design Fee Breakdown (Case Study)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Number of Students</th>
+                <th>Master Template Fee</th>
+                <th>Data Processing Fee (₹5/student)</th>
+                <th>Total Design Bill</th>
+                <th>Revenue Per Card</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>50 Students</td>
+                <td>₹1,000</td>
+                <td>₹250</td>
+                <td>₹1,250</td>
+                <td class="revenue-highlight">₹25.00</td>
+            </tr>
+            <tr>
+                <td>100 Students</td>
+                <td>₹1,000</td>
+                <td>₹500</td>
+                <td>₹1,500</td>
+                <td class="revenue-highlight">₹15.00</td>
+            </tr>
+            <tr>
+                <td>500 Students</td>
+                <td>₹1,000</td>
+                <td>₹2,500</td>
+                <td>₹3,500</td>
+                <td class="revenue-highlight">₹7.00</td>
+            </tr>
+            <tr>
+                <td>1,000 Students</td>
+                <td>₹1,000</td>
+                <td>₹5,000</td>
+                <td>₹6,000</td>
+                <td class="revenue-highlight">₹6.00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>6. Institutional Bulk Pricing (1,000+ Units)</h2>
+    <p class="sub-text">*Special factory-direct rates for schools and large organizations.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Specification</th>
+                <th>Bulk Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>PVC Student ID Cards</strong></td>
+                <td>800 Micron, Double Sided</td>
+                <td class="price-col">₹12 – ₹18 /unit</td>
+            </tr>
+            <tr>
+                <td><strong>Branded Lanyards</strong></td>
+                <td>Satin Finish, Multi-color</td>
+                <td class="price-col">₹8 – ₹12 /unit</td>
+            </tr>
+            <tr>
+                <td><strong>Annual Prospectus</strong></td>
+                <td>12-Page Booklet, Glossy</td>
+                <td class="price-col">₹18 – ₹28 /unit</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+<h2>7. Secure Payment Infrastructure & Compliance</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Integration Type</th>
+            <th>Entry-Level / Startup</th>
+            <th>Professional / Enterprise</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Standard CMS Integration (WordPress/Shopify)</td>
+            <td class="price-col">₹5,000</td>
+            <td class="price-col">₹12,000+</td>
+        </tr>
+        <tr>
+            <td>Custom Web Integration (React, Node.js, PHP)</td>
+            <td class="price-col">₹15,000</td>
+            <td class="price-col">₹35,000+</td>
+        </tr>
+        <tr>
+            <td>Mobile App Integration (Android & iOS SDKs)</td>
+            <td class="price-col">₹20,000</td>
+            <td class="price-col">₹50,000+</td>
+        </tr>
+        <tr>
+            <td>Subscription & Multi-Vendor (Recurring/Payouts)</td>
+            <td class="price-col">₹45,000</td>
+            <td class="price-col">₹1,00,000+</td>
+        </tr>
+    </tbody>
+</table>
+<p><i>*Note: Third-party gateway transaction fees (approx. 2%) are charged separately by the provider.</i></p>
+
+    <div class="terms">
+        <strong>Terms & Statutory Compliance:</strong>
+        <ul>
+            <li><strong>GST Compliance:</strong> GST extra as applicable on all services as per government norms.</li>
+            <li><strong>MSME Registered:</strong> Registered under MSME Udyam (UDYAM-KR-03-0674838).</li>
+            <li><strong>Pricing:</strong> Rates are approximate. Final costs vary based on material quality (GSM), order volume, and complexity.</li>
+            <li><strong>Intellectual Property:</strong> Source code sales are governed by our Software License Agreement for single-deployment usage.</li>
+            <li><strong>Testing:</strong> All IT deployments include a 48-hour observation window for final testing and bug fixes.</li>
+            <li><strong>Payments:</strong> 50% advance for project initiation. International payments accepted via Skydo/Wire Transfer.</li>
+        </ul>
+    </div>
+<footer style="background: #2c3e50; color: white; padding: 30px 20px; text-align: center; font-size: 0.85rem; border-top: 4px solid #5f259f; font-family: 'Verdana', sans-serif;">
+    <div style="max-width: 1000px; margin: 0 auto; line-height: 1.8;">
+        <p style="font-weight: bold; font-size: 1rem; color: orange; margin-bottom: 5px;">Deepak IT & WebServices | Proprietorship Firm</p>
+        <p>MSME Registration: <strong>UDYAM-KR-03-0674838</strong> | NIC Code: 62011 (Software Development)</p>
+        
+        <!-- Policy Links Section -->
+        <div style="margin: 15px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+            <a href="privacy-policy.html" class="menu-item" target="_blank">Privacy Policy</a>
+<a href="refund-policy.html" class="menu-item" target="_blank">Refund Policy</a>
+<a href="shipping-return.html" class="menu-item" target="_blank">Shipping and Return Policy</a>
+
+         <a href="terms.html" class="menu-item" target="_blank">Terms & Conditions</a>
+        </div>
+
+        <p style="color: #bdc3c7; font-size: 0.75rem; margin-top: 10px;">
+            &copy; 2026 All Rights Reserved. | Support: diws2026@outlook.com
+        </p>
+    </div>
+</footer>
+
+</div>
+
+</body>
+</html>
